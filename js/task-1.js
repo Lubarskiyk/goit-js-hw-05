@@ -1,7 +1,5 @@
-function getUserNames(users) {
-  const allName = users.map(user => user.name);
-  return allName;
-}
+const getUserNames = users => users.map(user => user.name);
+
 console.log('TASK-1');
 console.log(
   getUserNames([
