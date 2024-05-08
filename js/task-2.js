@@ -1,12 +1,6 @@
-function getUsersWithFriend(users, friendName) {
-  const allFriendsofName = [];
-  users.map(value => {
-    if (value.friends.some(element => element === friendName)) {
-      allFriendsofName.push(value);
-    }
-  });
-  return allFriendsofName;
-}
+const getUsersWithFriend = (users, friendName) => {
+  return users.filter(user => user.friends.includes(friendName));
+};
 
 console.log('TASK-2');
 
